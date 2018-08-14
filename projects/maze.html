@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Yangsoo Song | hola!</title>
+
+    <!-- meta-->
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+    <meta name="author" content="Yangsoo Song">
+    <meta name="keywords" content="Yangsoo Song, undergraduates, student, computer science, Northeastern University, Boston, Massachusetts">
+    <meta charset="utf-8" />
+
+    <!-- FAVICON -->
+    <link rel="icon" href="assets/favicon/favicon.png">
+    <link rel="shortcut icon" href="assets/favicon/favicon.png">
+
+    <!-- CSS-->
+    <!--icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latin Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Damion|Libre+Barcode+39+Extended+Text|Neucha" rel="stylesheet">
+    <!-- Korean Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo|Sunflower:300|Yeon+Sung&amp;subset=korean" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dokdo|Gamja+Flower|Hi+Melody" rel="stylesheet">
+    <link href="../style.css" type="text/css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="section">
+      <div class="project-item maze">
+        <img src="../assets/maze.gif" alt="maze dfs gif">
+        <button onclick="goBack()" class="button">Go back to homepage</button>
+        <h4 class="capitalize">description</h4>
+        <p>
+          For Fundametnals of Computer Science 2 class, I created an interactive maze "game."
+          This project was the initial program to actually apply the concept of minimum spanning tree
+          and search algorithms including Kruskal's algorithm that I learned in the class.
+          The programmer needed to create a maze with minimum spanning tree of a graph and
+          find the way to implement algorithms(<a href="https://en.wikipedia.org/wiki/Breadth-first_search" target="_blank">Breadth-first Search(BFS)</a> and
+        <a href="https://en.wikipedia.org/wiki/Depth-first_search" target="_blank">Depth First Search(DFS)</a>) to solve the maze.
+
+          The above example used DFS to find the path for the maze.
+        </p>
+        <h4 class="capitalize">challenges</h4>
+        <p>
+          Although it was rewarding experience, it was quite challenging to actually adapt newly learned algorithms to real program.
+          Also, I was not familiar with <a href="https://en.wikipedia.org/wiki/Test-driven_development" target="_blank">Test-Driven development(TDD)</a> and tests were done after coding, which made me hard to catch the errors after.
+        </p>
+        <h4 class="capitalize">future ideas</h4>
+        <p>
+          I think I do not have tangilble future plans for this game yet as all the features were implemented successfully, however, the project gave a lesson that TDD is important principle for software development.
+        </p>
+        <p>
+          You can foud my code for this project at <a href="#" target="_blank">here</a>.
+        </p>
+        
+        <div class="small-text-block">Summer 2016</div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+  function goBack() {
+      window.history.back();
+  }
+  </script>
+
+</html>

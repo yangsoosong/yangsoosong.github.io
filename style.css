@@ -1,0 +1,401 @@
+body {
+  background: linear-gradient(80deg, #e6e6fa, #faf0e6, #e6fafa);
+  /* background: linear-gradient(90deg, #fae6e6, #faf0e6, #fae6e6); */
+  /* background: linear-gradient(0deg,#ccfffc,#ffcccf); */
+  font-family: "Raleway", "Gerogia", sans-serif;
+  font-family: "Neucha", serif;
+  /* font-family: "Gamja Flower"; */
+  /* font-family: monospace; */
+  /* font-family: serif; */
+  font-family: "Sunflower", serif;
+  /* font-family: "Yeon Sung"; */
+  font-weight: 500;
+  margin: 0 auto;
+  max-width: 80em;
+  padding: 0 110px;
+}
+
+a {
+  text-decoration: none;
+  color: #FA8072;
+}
+
+header {
+  position: fixed;
+  flex-wrap: wrap;
+}
+
+nav {
+  /* border-bottom: 1px dotted #466995; */
+  letter-spacing: 0.1em;
+  /* font-family: "East Sea Dokdo", cursive; */
+  /* font-family: "Dokdo", cursive; */
+  font-size: 25px;
+  font-weight: bolder;
+  color: pink;
+  text-align: right;
+  position: fixed;
+  right: 0;
+  margin: 0;
+  padding-right: 10px;
+  z-index: 1;
+}
+
+nav a {
+  opacity: 0.45;
+}
+
+nav a:hover {
+  opacity: 1;
+}
+
+.links {
+  padding-top: 0.5em;
+  padding-right: 0.5em;
+  font-size: 2.2em;
+}
+
+.sidebar {
+  top: 40%;
+  padding-right: 0.5em;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Header styles */
+.label {
+  color: #FA8072;
+  pointer-events: none;
+  padding-bottom: 10px;
+  /* font-family: "Covered By Your Grace", "Yeon Sung"; */
+  /* font-family: "Yeon Sung"; */
+  /* font-family: "Raleway", "Gerogia", sans-serif; */
+  font-size: 50px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+#intro:hover h1.label span{
+  display: none;
+}
+#intro:hover h1.label a:after {
+  content: "It is so nice meeting you";
+}
+
+.profile-image img{
+  width: 270px;
+  height: 270px;
+}
+
+#intro .fa-ul {
+  font-weight: 600;
+}
+
+#about.section p {
+  overflow: auto;
+}
+
+#where.section {
+  /* height: auto; */
+}
+
+h2 {
+  font-size: 38px;
+  text-align: right;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 22px;
+  margin: auto;
+  padding-bottom: 5px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+/* page elements */
+p, ul,ol {
+  font-size: 25px;
+  list-style-type: none;
+  line-height: 130%;
+  word-break: break-word;
+}
+
+li {
+  margin: .5em 0;
+}
+
+.image {
+  backgorund-size: cover;
+  background-position: bottom center;
+  max-width: 70%;
+  max-height: 70%;
+  display: flex;
+  margin: 0 auto;
+  opacity: 0.75;
+  /* filter: invert(40);
+  filter: grayscale(20);
+  filter: brightness(1.5);
+  filter: contrast(5); */
+  /* filter: sepia(80); */
+  filter: saturate(5);
+}
+
+#projects {
+  display: flex;
+  justify-content: space-around;
+  /* flex-direction: row; */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    /* TODO: fix; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project img {
+  max-width: 100%;
+  max-height: 100%;
+  /* object-fit: cover; */
+}
+
+.project-overlay {
+  position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    color: transparent;
+    transition: 1s;
+}
+
+.project-label {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.project:hover .project-overlay {
+  background-color: rgba(255, 255, 255, .8);
+  color: black;
+  cursor: pointer;
+}
+
+.project-item {
+  display: flex;
+  flex-flow: column;
+  /* overflow: auto; */
+  justify-content: center;
+  height:auto;
+  /* align-items: center; */
+}
+
+.project-item button {
+  color: #FA8072;
+  border-radius: 15%;
+  padding: 1em;
+  font-size: 1em;
+  line-height: .1em;
+  align-self: flex-start;
+}
+.project-item img {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 450px;
+  height: 450px;
+  align-self: center;
+}
+
+.music img {
+  width: auto;
+  height: auto;
+}
+
+.project-item p {
+  font-size: 20px;
+  margin: auto;
+}
+
+.project-item h4 {
+  padding:0;
+}
+
+/* Typography */
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+
+
+.caption {
+    /* background: linear-gradient(35deg, #ccffff, #ffcccc, rgb(204, 204, 255)); */
+  font-size: 16px;
+  line-height: 16px;
+  /* margin: auto; */
+  padding: 10px;
+  /* top: 80%; */
+  opacity: 0.3;
+  text-align: center;
+}
+
+.caption:hover {
+  animation-name: emerge;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+  @keyframes emerge {
+    100% {
+      opacity: 1;
+    }
+}
+
+footer {
+  /* background-color: burlywood; */
+  font-size: 28px;
+  font-family: "East Sea Dokdo", cursive;
+  /* font-family: "Dokdo", cursive; */
+  /* font-family: "damion", cursive; */
+  text-align: center;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+footer:hover {
+  animation-name: fade;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+@Keyframes fade {
+  50% {
+    /* left: 80%; */
+    opacity: 0.15;
+  }
+  100% {
+    opacity: 0.02
+  }
+}
+
+@Keyframes fade2 {
+  0% {
+    left: 96%;
+  }
+  50% {
+    left: 86%;
+    transform: scale(1.15);
+    opacity: 0.1;
+  }
+  100% {
+    left: 96%;
+  }
+}
+
+/*
+what's the differnece between righ: 0 and text-align: right?
+*/
+/* extra stuff
+*/
+  .pastel {
+    background: linear-gradient(35deg, #ccffff, #ffcccc);
+  }
+  .ball {
+    width: 40px;
+    height: 40px;
+    /* margin: 20px auto; */
+    position: relative;
+    left: 96%;
+    background: linear-gradient(35deg, #ccffff,#ffcccc);
+    margin: 10px;
+    border-radius: 45%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 38px;
+    animation-name: fade2;
+    animation-duration: 4s;
+    /* animation-timing-function: ease-out; */
+    /* animation-iteration-count: infinite; */
+    display: block;
+/* font-family: 'Hi Melody', cursive; */
+}
+.ball:hover {
+  opacity: 0.2;
+  transform: scale(1.5);
+}
+/* playing with balls */
+#ball1 {
+  font-family: 'Gamja Flower', cursive;
+}
+#ball2 {
+  font-family: 'Sunflower', cursive;
+}
+#ball3 {
+  font-family: 'Dokdo', cursive;
+}
+#ball4 {
+  font-family: 'East Sea Dokdo', cursive;
+}
+#ball5 {
+  font-family: 'Yeon Sung', cursive;
+}
+
+@media(max-width:700px) {
+  body {
+    padding: 0 60px;
+  }
+  .label {
+    font-size: 35px;
+  }
+  nav ul {
+    font-size: 18px;
+  }
+  .section {
+    padding: 25px;
+  }
+  .section p {
+    font-size: 20px;
+  }
+  .intro-texts .fa-ul li {
+    font-size: 80%;
+  }
+  #where.section {
+    flex-direction:row;
+    /* height: auto; */
+  }
+  .profile-image img{
+    width: 200px;
+    height: 200px;
+  }
+
+  .caption {
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    top: 10%;
+    width: 100%;
+  }
+}
