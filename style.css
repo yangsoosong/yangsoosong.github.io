@@ -77,10 +77,12 @@ nav a:hover {
   /* font-family: "Covered By Your Grace", "Yeon Sung"; */
   /* font-family: "Yeon Sung"; */
   /* font-family: "Raleway", "Gerogia", sans-serif; */
-  font-size: 50px;
+  font-size: 45px;
   margin: 0 auto;
   position: relative;
   text-align: center;
+  flex-wrap: nowrap;
+  /* justify-content: space-between; */
 }
 
 #intro:hover h1.label span{
