@@ -46,6 +46,7 @@ nav a:hover {
   padding-top: 0.5em;
   font-size: 2.2em;
   flex-wrap: nowrap;
+  justify-content: center;
 }
 
 .sidebar {
@@ -317,6 +318,7 @@ footer:hover {
   .links {
     font-size: 1.8em;
   }
+
   .sidebar ul {
     font-size: 16px;
   }
