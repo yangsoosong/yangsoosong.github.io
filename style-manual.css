@@ -138,12 +138,13 @@ li {
   max-height: 70%;
   margin: 0 auto;
   opacity: 0.75;
-  /* filter: invert(40);
-  filter: grayscale(20);
-  filter: brightness(1.5);
-  filter: contrast(5); */
-  /* filter: sepia(80); */
-  filter: saturate(5);
+  border-radius: 15%;
+  /* filter: invert(0.25); */
+  /* filter: grayscale(0.6); */
+  /* filter: brightness(1.35); */
+  /* filter: contrast(2);  */
+  /* filter: sepia(.2); */
+  filter: saturate(3.5);
 }
 #Projects, .image, footer {
   display: flex;
