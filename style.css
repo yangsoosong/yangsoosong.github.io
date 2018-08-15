@@ -240,8 +240,8 @@ li {
 /* adjusting size as maze.gif is bigger than
 music_editor.gif*/
 .maze img {
-  max-width: 60%;
-  max-height: 60%;
+  max-width: 40%;
+  max-height: 40%;
 }
 
 .project-item p {
