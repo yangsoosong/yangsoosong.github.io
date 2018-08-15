@@ -99,6 +99,7 @@ nav a:hover {
 .profile-image img{
   width: 270px;
   height: 270px;
+  border-radius: 50%;
 }
 
 #intro .fa-ul {
