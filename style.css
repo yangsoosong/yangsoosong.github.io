@@ -253,6 +253,11 @@ music_editor.gif*/
   padding:0;
 }
 
+.project-item .small-text-block {
+  text-align: right;
+  font-style: oblique;
+}
+
 /* Typography */
 .uppercase {
   text-transform: uppercase;
