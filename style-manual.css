@@ -9,7 +9,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #FA8072;
+  color: #fa8072;
 }
 
 header, nav{
@@ -58,7 +58,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+      align-items: center;
   flex-wrap: nowrap;
 }
 
@@ -67,7 +67,7 @@ nav a:hover {
   position:relative;
 }
 .label {
-  color: #FA8072;
+  color: #fa8072;
   pointer-events: none;
   padding-bottom: 10px;
   font-size: 45px;
@@ -134,7 +134,7 @@ li {
 }
 
 .image {
-  max-width: 70%;
+  max-width:  70%;
   max-height: 70%;
   margin: 0 auto;
   opacity: 0.75;
@@ -156,33 +156,34 @@ li {
 
 .project {
     height: 200px;
-    width: 200px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width:  200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .project img, .project-item img {
-  max-width: 100%;
+  max-width:  100%;
   max-height: 100%;
 }
 
 .project-overlay {
   position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0);
-    color: transparent;
-    transition: 1s;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  color: transparent;
+  transition: 1s;
 }
 
 .project-label {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
 }
 
 .project:hover .project-overlay {
@@ -197,7 +198,7 @@ li {
 }
 
 .project-item button {
-  color: #FA8072;
+  color: #fa8072;
   border-radius: 15%;
   padding: 1em;
   font-size: 1em;
@@ -205,10 +206,10 @@ li {
   align-self: baseline;
 }
 .project-item img {
-  left: 0;
   top: 0;
-  right: 0;
   bottom: 0;
+  left: 0;
+  right: 0;
   /* width: 350px;
   height: 350px; */
   padding-top: 1em;
@@ -328,7 +329,7 @@ footer:hover {
     font-size: 80%;
   }
   #intro li{
-      margin: 0.3em 0;
+    margin: 0.3em 0;
   }
 
   #projects {
