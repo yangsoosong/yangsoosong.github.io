@@ -1,0 +1,351 @@
+header, nav {
+  position:fixed
+}
+.caption:hover, footer:hover {
+  animation-fill-mode:forwards
+}
+body {
+  background:linear-gradient(80deg,#e6e6fa,linen,#e6fafa);
+  font-family:Sunflower, serif;
+  font-weight: 500;
+  margin: 0 auto;
+  max-width:80em;
+  padding:0 110px
+}
+a {
+  text-decoration:none;
+  color:salmon
+}
+header {
+  flex-wrap:wrap
+}
+nav { font-size:25px;
+  font-weight:bolder;
+  color:pink;
+  text-align:right;
+  right:0;
+  margin:0;
+  padding-right:10px;
+  z-index:1;
+  }
+.label,.project {
+  position:relative
+}
+.links,.sidebar {
+  padding-right:.5em
+}
+nav a {
+  opacity:.45
+}
+nav a:hover {
+  opacity:1
+}
+.links {
+  padding-top:.5em;
+  font-size:2.2em
+}
+.sidebar{
+  top:20%
+}
+.sidebar li {
+  margin:1.1em 0
+}
+.section {
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:nowrap;
+}
+.label {
+  color:salmon;
+  pointer-events:none;
+  padding-bottom:10px;
+  font-size:45px;
+  margin:0 auto;
+  text-align:center;
+  flex-wrap:nowrap;
+}
+#intro:hover h1.label span {
+  display:none;
+}
+#projects, .image, footer {
+  display:flex;
+}
+#intro:hover h1.label a:after {
+  content:"It is so nice meeting you"
+}
+.profile-image img {
+  width:270px;
+  height:270px;
+  border-radius:50%
+}
+#about.section p {
+  overflow:auto
+}
+#where.section {
+  justify-content:space-around;
+}
+h2 {
+  font-size:38px;
+  text-align:right
+}
+h3 {
+  font-size:30px
+}
+h4 {
+  font-size:22px;
+  margin:auto;
+  padding-bottom:5px
+}
+h5 {
+  font-size:18px
+}
+ol,p,ul {
+  font-size:25px;
+  list-style-type:none;
+  line-height:130%;
+  word-break:break-word;
+}
+li {
+  margin:.5em 0;
+}
+.image {
+  backgorund-size:cover;
+  background-position:bottom center;
+  max-width:70%;
+  max-height:70%;
+  margin:0 auto;
+  opacity:.75;
+  filter:saturate(5);
+}
+.project img, .project-item img {
+  max-width:100%;
+  max-height:100%
+}
+#projects {
+  justify-content:space-around;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.project {
+  height:200px;
+  width:200px;
+  box-shadow:0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)
+}
+.project-overlay {
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  height:100%;
+  width:100%;
+  background-color:rgba(255,255,255,0);
+  color:transparent;
+  transition:1s;
+}
+.project-label {
+  position:relative;
+  top:50%;
+  transform:translateY(-50%);
+  text-align:center
+}
+.project:hover .project-overlay {
+  background-color:rgba(255,255,255,.8);
+  color:#000;
+  cursor:pointer
+}
+.ball,.pastel {
+  background:linear-gradient(35deg,#cff,#fcc)
+}
+.project-item {
+  display:flex;
+  flex-flow:column
+}
+.project-item button {
+  color:salmon;
+  border-radius:15%;
+  padding:1em;
+  font-size:1em;
+  line-height:.1em;
+  align-self:baseline;
+}
+.project-item img {
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  padding-top:1em;
+  padding-bottom:1em;
+  align-self:center;
+  flex-flow:column
+}
+.maze img {
+  max-width:55%;
+  max-height:55%
+}
+.project-item p {
+  font-size:20px;
+  margin:auto
+}
+.project-item h4 {
+  padding:0;
+}
+.project-item .small-text-block {
+  text-align:right;
+  font-style:oblique;
+}
+.ball, .caption, footer {
+  text-align:center
+}
+.uppercase {
+  text-transform:uppercase;
+}
+.capitalize {
+  text-transform:capitalize
+}
+.caption {
+  font-size:16px;
+  line-height:16px;
+  padding:10px;
+  opacity:.3
+}
+.caption:hover {
+  animation-name:emerge;
+  animation-duration:3s;
+}
+.ball, footer:hover {
+  animation-duration:4s;
+}
+@keyframes emerge {
+  100% {
+    opacity:1;
+  }
+}
+footer {
+  font-size:28px;
+  font-family:"East Sea Dokdo",cursive;
+  height:100px;
+  justify-content:center;
+}
+footer:hover {
+  animation-name:fade
+}
+@Keyframes fade {
+  50% {
+    opacity:.15;
+  }
+  100% {
+    opacity:.02
+  }
+}
+@Keyframes fade2 {
+  0%, 100% {
+    left:96%
+  }
+  50% {
+    left:86%;
+    transform:scale(1.15);
+    opacity:.1
+  }
+}
+.ball {
+  width:40px;
+  height:40px;
+  position:relative;
+  left:96%;
+  margin:10px;
+  border-radius:45%;
+  line-height:40px;
+  font-size:38px;
+  animation-name:fade2;
+  display:block
+}
+.ball:hover {
+  opacity:.2;
+  transform:scale(1.5)
+}
+#ball1 {
+  font-family:'Gamja Flower',cursive;
+}
+#ball2 {
+  font-family:Sunflower,cursive;
+}
+#ball3 {
+  font-family:Dokdo,cursive
+}
+#ball4 {
+  font-family:'East Sea Dokdo',cursive
+}
+#ball5 {
+  font-family:'Yeon Sung',cursive
+}
+@media(max-width:700px) {
+  body {
+    padding: 0 30px;
+  }
+  .label {
+    font-size:35px
+  }
+  .links {
+    font-size:1.8em
+  }
+  .sidebar ul {
+    font-size:16px
+  }
+  .section {
+    padding:22px
+  }
+  .section p {
+    font-size:20px
+  }
+  .intro-texts .fa-ul li {
+    font-size:80%
+  }
+  #intro li {
+    margin:.3em 0
+  }
+  #projects {
+    display:flex;
+    justify-content:space-around;
+    flex-direction:row;
+    align-items:center;
+    flex-wrap:wrap;
+  }
+  .profile-image img {
+    width:200px;
+    height:200px
+  }
+  .maze img {
+    max-width:80%;
+    max-height:80%;
+  }
+  .project-item p {
+    font-size:15px
+  }
+  .project-item button {
+    padding:.8em;
+    font-size:.8em;
+    line-height:.08em
+  }
+  .caption {
+    flex-direction:row;
+    margin:0;
+    padding:0;
+    top:10%;
+    width:100%
+  }
+  #where.section {
+    display:block
+  }
+  #where h3 {
+    font-size:18px;
+    align-self:center
+  }
+  #where li {
+    font-size:18px;
+    margin:.2em 0
+  }
+}

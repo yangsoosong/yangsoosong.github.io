@@ -1,0 +1,48 @@
+
+/*
+what's the differnece between righ: 0 and text-align: right?
+*/
+/* extra stuff
+*/
+  .pastel {
+    background: linear-gradient(35deg, #ccffff, #ffcccc);
+  }
+  .ball {
+    width: 40px;
+    height: 40px;
+    /* margin: 20px auto; */
+    position: relative;
+    left: 96%;
+    background: linear-gradient(35deg, #ccffff,#ffcccc);
+    margin: 10px;
+    border-radius: 45%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 38px;
+    animation-name: fade2;
+    animation-duration: 4s;
+    /* animation-timing-function: ease-out; */
+    /* animation-iteration-count: infinite; */
+    display: block;
+/* font-family: 'Hi Melody', cursive; */
+}
+.ball:hover {
+  opacity: 0.2;
+  transform: scale(1.5);
+}
+/* playing with balls */
+#ball1 {
+  font-family: 'Gamja Flower', cursive;
+}
+#ball2 {
+  font-family: 'Sunflower', cursive;
+}
+#ball3 {
+  font-family: 'Dokdo', cursive;
+}
+#ball4 {
+  font-family: 'East Sea Dokdo', cursive;
+}
+#ball5 {
+  font-family: 'Yeon Sung', cursive;
+}
