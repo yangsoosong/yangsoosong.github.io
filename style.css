@@ -27,7 +27,7 @@ header {
 
 nav {
   /* border-bottom: 1px dotted #466995; */
-  letter-spacing: 0.1em;
+  /* letter-spacing: 0.05em; */
   /* font-family: "East Sea Dokdo", cursive; */
   /* font-family: "Dokdo", cursive; */
   font-size: 25px;
@@ -56,8 +56,12 @@ nav a:hover {
 }
 
 .sidebar {
-  top: 40%;
+  top: 20%;
+  /* justify-content: space-around; */
   padding-right: 0.5em;
+}
+.sidebar li {
+  margin: 1.1em 0;
 }
 
 .section {
@@ -140,7 +144,7 @@ p, ul,ol {
 }
 
 li {
-  margin: .5em 0;
+  margin: 0.5em 0;
 }
 
 .image {
@@ -389,8 +393,10 @@ what's the differnece between righ: 0 and text-align: right?
   .links {
     font-size: 1.8em;
   }
-  nav ul {
-    font-size: 17px;
+  .sidebar ul {
+    font-size: 16px;
+    /* padding-right: 0px; */
+    padding-bottom
   }
 
   .section {
