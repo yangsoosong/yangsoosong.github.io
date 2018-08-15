@@ -106,7 +106,7 @@ nav a:hover {
 }
 
 #where.section {
-  flex-wrap: nowrap;
+  /* flex-wrap: wrap; */
   justify-content: space-around;
   /* height: calc(100vh - 100px); */
 
@@ -240,8 +240,8 @@ li {
 /* adjusting size as maze.gif is bigger than
 music_editor.gif*/
 .maze img {
-  max-width: 40%;
-  max-height: 40%;
+  max-width: 80%;
+  max-height: 80%;
 }
 
 .project-item p {
@@ -379,21 +379,22 @@ what's the differnece between righ: 0 and text-align: right?
 }
 
 @media(max-width:700px) {
+
   body {
     padding: 0 60px;
   }
   .label {
     font-size: 35px;
   }
-
   .links {
     font-size: 1.8em;
   }
   nav ul {
-    font-size: 18px;
+    font-size: 17px;
   }
+
   .section {
-    padding: 25px;
+    padding: 22px;
   }
   .section p {
     font-size: 20px;
@@ -401,6 +402,40 @@ what's the differnece between righ: 0 and text-align: right?
   .intro-texts .fa-ul li {
     font-size: 80%;
   }
+
+  #projects {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .profile-image img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .maze img {
+    max-width: 80%;
+    max-height: 80%;
+  }
+  .project-item p {
+    font-size: 15px;
+  }
+
+  .project-item button {
+    padding: 0.8em;
+    font-size: 0.8em;
+    line-height: .08em;
+  }
+  .caption {
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    top: 10%;
+    width: 100%;
+  }
+
   #where.section {
     display:block;
   }
@@ -411,28 +446,6 @@ what's the differnece between righ: 0 and text-align: right?
   #where li {
     font-size: 18px;
     margin: .2em 0;
-
-  }
-  .profile-image img {
-    width: 200px;
-    height: 200px;
   }
 
-  .project-item p {
-    font-size: 15px;
-  }
-
-  .project-item button {
-    padding: 0.8em;
-    font-size: 0.8em;
-    line-height: .08em;
-  }
-
-  .caption {
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
-    top: 10%;
-    width: 100%;
-  }
 }
