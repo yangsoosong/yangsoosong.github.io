@@ -66,7 +66,7 @@ nav a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 /* Header styles */
@@ -104,7 +104,10 @@ nav a:hover {
 }
 
 #where.section {
-  /* height: auto; */
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  /* height: calc(100vh - 100px); */
+
 }
 
 h2 {
@@ -375,6 +378,10 @@ what's the differnece between righ: 0 and text-align: right?
   .label {
     font-size: 35px;
   }
+
+  .links {
+    font-size: 1.8em;
+  }
   nav ul {
     font-size: 18px;
   }
@@ -388,8 +395,16 @@ what's the differnece between righ: 0 and text-align: right?
     font-size: 80%;
   }
   #where.section {
-    flex-direction:row;
-    /* height: auto; */
+    display:block;
+  }
+  #where h3 {
+    font-size: 18px;
+    align-self: center;
+  }
+  #where li {
+    font-size: 18px;
+    margin: .2em 0;
+
   }
   .profile-image img {
     width: 200px;
