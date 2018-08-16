@@ -201,6 +201,7 @@ li {
 .project-item {
   display: flex;
   flex-flow: column;
+  /*temporary fix IE overflow with small window*/
   align-self: stretch;
 }
 
