@@ -97,13 +97,15 @@ nav a:hover {
   /* font-weight: 600; */
 }
 
-#about.section p {
+#about p {
   overflow: auto;
+  /*Inserting this to fix issue with overflow in IE*/
+  align-self: stretch;
 }
 
-#where.section {
+/* #where.section {
   justify-content: space-around;
-}
+} */
 
 h2 {
   font-size: 38px;
@@ -199,6 +201,7 @@ li {
 .project-item {
   display: flex;
   flex-flow: column;
+  align-self: stretch;
 }
 
 .project-item button {
@@ -232,6 +235,7 @@ music_editor.gif*/
 .project-item p {
   font-size: 20px;
   margin: auto;
+  /* align-self:stretch; */
 }
 
 .project-item h4 {
