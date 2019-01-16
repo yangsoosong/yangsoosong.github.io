@@ -101,6 +101,7 @@ nav a:hover {
   overflow: auto;
   /*Inserting this to fix issue with overflow in IE*/
   align-self: stretch;
+  line-height: 150%;
 }
 
 /* #where.section {
